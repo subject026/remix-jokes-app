@@ -1,5 +1,4 @@
 import type { ActionArgs, LinksFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
 import { Link, useActionData, useSearchParams } from "@remix-run/react";
 
 import stylesUrl from "~/styles/login.css";
@@ -39,6 +38,8 @@ export const action = async ({ request }: ActionArgs) => {
 
   // TODO: check for open issue about this
   // const redirectTo = validateUrl(form.get("redirectTo") || "/jokes");
+  // TODO: code added highlighting for logout section of tutorial doesn't look quite right
+  // TODO: unused imports in several places
 
   const redirectTo = validateUrl(
     (form.get("redirectTo") as string) || "/jokes"
