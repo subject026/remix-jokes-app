@@ -40,6 +40,7 @@ export const action = async ({ request }: ActionArgs) => {
   // const redirectTo = validateUrl(form.get("redirectTo") || "/jokes");
   // TODO: code added highlighting for logout section of tutorial doesn't look quite right
   // TODO: unused imports in several places
+  // TODO: tutorial advises deleting database to trigger catch boundary but unless you delete your cookie the boundary doesn't trigger when visiting /jokes/new
 
   const redirectTo = validateUrl(
     (form.get("redirectTo") as string) || "/jokes"
